@@ -1,0 +1,101 @@
+{{USP_SaoCarlos-Brazil/IARABootstrapCSS}}
+{{USP_SaoCarlos-Brazil/IARAStyle}} 
+
+
+<html lang="en">
+  <head>
+      <title>IARA</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <header id="header" class="header header-hide">
+    <div class="container">
+      <div id="logo" class="pull-left" >
+        <a href="#body"><img src="https://2019.igem.org/wiki/images/3/3b/T--USP_SaoCarlos-Brazil--LogoIaraProject.jpg" alt="" title="" style="width:120px" /></a>
+      </div>
+     <div id=”navbar” class=”navbar-collapse collapse”>
+        <ul class=”nav navbar-nav”>
+
+          <li class=”active”><a href=”index.html”>Home</a></li>
+          
+          <li class="dropdown"><a class="dropdown-toggle" href="" data-toggle=”dropdown”>Project<span class=”caret”></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="description.html">Description</a></li>
+              <li><a href="design.html">Design</a></li>
+              <li><a href="experiments.html">Experiments</a></li>
+              <li><a href="notebook.html">Notebook</a></li>
+              <li><a href="model.html">Model</a></li>
+              <li><a href="results.html">Results</a></li>
+              <li><a href="demonstrate.html">Demonstrate</a></li>
+              <li><a href="measurement.html">Measurement</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a class="dropdown-toggle" href="" data-toggle=”dropdown”>Team<span class=”caret”></span></a>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="collaborations.html">Collaborations</a></li>
+              <li><a href="attributons.html">Attributions</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a class="dropdown-toggle" href="" data-toggle=”dropdown”>Parts<span class=”caret”></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="parts.html">Parts Overview</a></li>
+              <li><a href="Basic_Part.html">Basic Parts</a></li>
+              <li><a href="Composite_Part.html">Composite Parts</a></li>
+              <li><a href="Part_Collection.html">Part Collection</a></li>
+              <li><a href="Improve.html">Improve</a></li>
+            </ul>
+          </li>
+
+
+          <li class=”active”><a href="Safety.html">Safety</a></li>
+
+          <li class="dropdown"><a class="dropdown-toggle" href="" data-toggle=”dropdown”>Humans Practices<span class=”caret”></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Human_Practices.html">Human Practices</a></li>
+              <li><a href="Public_Engagement.html">Public Engagement</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a class="dropdown-toggle" href="" data-toggle=”dropdown”>Awards<span class=”caret”></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Human_Practices.html">Integrated Human Practices</a></li>
+              <li><a href="Public_Engagement.html">Education and Public Engagement</a></li>
+              <li><a href="model.html">Model</a></li>
+              <li><a href="measurement.html">Measurement</a></li>
+              <li><a href="Basic_Part">Best New Basic Part</a></li>
+              <li><a href="Composite_Part.html">Best New Composite Part</a></li>
+              <li><a href="Part_Collection.html">Best Part Collection</a></li>
+              <li><a href="Hardware.html">Hardware</a></li>
+            </ul>
+          </li>
+
+
+          <li class=”active”><a href="contact.html">Contact</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <body style="">
+    <div id="coverTeam">
+      <polyline id='wave1' stroke-width='3' />
+      <polyline id='wave2' stroke-width='1' />
+    </div>
+    <script>
+      var url = window.location.href;
+      $(function() {
+        $('.nav-link[href="'+url+'"]').addClass("active");
+        $('.dropdown-item[href="'+url+'"]').addClass("active");
+        $('.dropdown-item[href="'+url+'"]').parent().parent().addClass("active");
+      });
+    </script>
+
+    <script type="text/javascript" src="https://2019.igem.org/wiki/index.php?title=Template:USP_SaoCarlos-Brazil/IARATemplateJS&action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="https://2019.igem.org/wiki/index.php?title=Template:USP_SaoCarlos-Brazil/IARAPopperJS&action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="https://2019.igem.org/wiki/index.php?title=Template:USP_SaoCarlos-Brazil/IARABootstrapJS&action=raw&ctype=text/javascript"></script>
+  </body>
+
+</html>

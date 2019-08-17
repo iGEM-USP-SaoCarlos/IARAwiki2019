@@ -1,0 +1,82 @@
+{{USP_SaoCarlos-Brazil/IARA}}
+
+<html>
+<script>
+// Scroll Down Icon
+$(document).ready(function() {
+    // Add smooth scrolling to all links
+    $("#goTo").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function() {
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        } // End if
+    });
+});
+
+
+$(document).ready(function () {
+$(".reg").click(function () {
+ $(".pop").fadeOut(100);
+ $(this).next().fadeIn(300);
+});
+
+$(".pop > span, .pop").click(function () {
+ $(".pop").fadeOut(300);
+});
+});
+
+</script>
+<div id='cover'>
+	<div id="iaraContainer">
+    <img src="https://2019.igem.org/wiki/images/9/97/T--USP_SaoCarlos-Brazil--IIARALogo.svg" />
+    <img src="https://2019.igem.org/wiki/images/9/99/T--USP_SaoCarlos-Brazil--AIARALogo.svg" />
+    <img src="https://2019.igem.org/wiki/images/7/73/T--USP_SaoCarlos-Brazil--RIARALogo.svg" />
+    <img src="https://2019.igem.org/wiki/images/9/99/T--USP_SaoCarlos-Brazil--AIARALogo.svg" />
+  </div>
+  <div id="titleWaveContainer">
+    <svg width="100%">
+      <defs>
+	<linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+	  <stop offset="0%" stop-color="#B5E1DF" />
+	  <stop offset="100%" stop-color="#00AEEF" />
+	</linearGradient>
+      </defs>
+      <polyline id='wave1' stroke-width='3' />
+      <polyline id='wave2' stroke-width='1' />
+    </svg>
+  </div>
+</div>
+
+
+<div class="container-fluid wavyContainer"><h1>HEEEEEEEEEY</h1></div>
+<div class="container-fluid wavyContainer"><h1>HEEEEEEEEEY</h1></div>
+<div class="container-fluid wavyContainer"><h1>HEEEEEEEEEY</h1></div>
+<div class="container-fluid wavyContainer"><h1>HEEEEEEEEEY</h1></div>
+<div class="container-fluid wavyContainer"><h1>HEEEEEEEEEY</h1></div>
+<div class="container-fluid wavyContainer"><h1>HEEEEEEEEEY</h1></div>
+<div class="container-fluid wavyContainer"><h1>HEEEEEEEEEY</h1></div>
+
+
+<script type="text/javascript" src="https://2019.igem.org/wiki/index.php?title=Template:USP_SaoCarlos-Brazil/IARAWaveJS&action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="https://2019.igem.org/wiki/index.php?title=Template:USP_SaoCarlos-Brazil/IARATemplateJS&action=raw&ctype=text/javascript"></script>
+
+
+</html>
+
+
+{{USP_SaoCarlos-Brazil/IARAFooter}}

@@ -1,0 +1,654 @@
+<html> 
+
+<!--Gets rid of pesky iGEM wiki formatting-->
+
+
+<style type="text/css">
+#home_logo, #sideMenu { display:none; }
+	#sideMenu, #top_title, .patrollink  {display:none;}
+	#content { margin-left:0px; margin-top:-7px; padding:0px; width:100%;line-height:1;}
+	body {background-color:white; }
+	#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
+	.judges-will-not-evaluate { border: 4px solid #e4dede; padding: 2% !important; width: 92%!important;}
+#top_menu_under{
+height: 7px;
+}
+
+#globalWrapper{
+font-size:100%;
+}
+
+.fixed-top{
+top:16px;
+}
+
+#HQ_page h1, h2, h3, h4, h5{
+font-family: inherit;
+}
+
+/* table reboot from wiki */
+#HQ_page th {
+background-color:rgba(0, 158, 198,0.3);
+color: inherit;
+}
+#HQ_page table .highlightBox {
+background-color:rgba(0, 158, 198,1);
+}
+#HQ_page table {
+margin-right: 0;
+margin-left: 0;
+}
+
+table{
+text-align: left;
+}
+
+.display-1{
+font-weight:300 !important;
+}
+
+#HQ_page p{
+font-family: inherit;
+font-size: 100%;
+}
+#bodyContent a[href ^="https://"], .link-https {
+    padding-right: 0px;
+}
+/*///////////////////////
+Barra de Progresso
+//////////////////////*/
+
+.card, .card-header {
+  line-height: 18px;
+  font-size: 16px;
+}
+
+h1.card-title, h2.card-title, h3.card-title, h4.card-title, h5.card-title, h6.card-title {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 1px;
+}
+
+.progressBar {
+  margin-bottom: 10px;
+}
+
+.progressBar h4 {
+  font-size: 10px;
+  text-transform: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin-bottom: 7px;
+  margin-bottom: .33em;
+}
+
+.progressBarContainer {
+  width: 100%;
+  max-width: 200px;
+  height: 5px;
+  background: #e6eae3;
+  background: rgba(8,102,220,.2);
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.progressBarValue {
+  height: 10px;
+  float: left;
+  background: #0866dc;
+  background: rgba(8,102,220,.75);
+}
+
+.value-00 { width: 0; }
+
+.value-10 { width: 10%;}
+
+.value-20 { width: 20%;}
+
+.value-30 { width: 30%;}
+
+.value-40 { width: 40%; }
+
+.value-50 { width: 50%; }
+
+.value-60 { width: 60%; }
+
+.value-70 { width: 70%;}
+
+.value-80 { width: 80%; }
+
+.value-90 { width: 90%; }
+
+.value-100 { width: 100%; }
+
+/*///////////////////////
+Cards time
+//////////////////////*/
+
+.card-subtitle{
+  font-size: 10px;
+  color: #FFF;
+  margin-top: 3px;
+}
+.cardname {
+  font-size: 26px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+.cardcurso {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 3px;
+  color: #0f0;
+}
+#team {
+    background: #eee !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #DF6E47;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #DF6E47;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    color: #DF6E47;
+    font-family: 'Montserrat', sans-serif;
+    top: 0;
+    left: 0;
+    background: black;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    color: #DF6E47;
+}
+
+.frontside .card,
+.backside .card {
+    height: 300px;
+    width: 300px;
+    color: #A3D5C7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.backside .card p {
+    font-size: 12px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+.backside .card{
+  background-color: #FFF;
+}
+.card-title{
+  font-size: 12px;
+}
+.listeam{
+  background-color: #A3D5C7;
+  font-family: 'Montserrat', sans-serif;
+  background-clip: padding-box;
+  font-size: 12px;
+  color: #FFF;
+}
+.iteam{
+  background-color: #FFF;
+  font-size: 10px;
+}
+
+/*///////////////////////
+Capa Iara e container
+//////////////////////*/
+
+#cover {
+    background: #171e34  url('https://2019.igem.org/wiki/images/c/cd/T--USP_SaoCarlos-Brazil--paraopebaAzul.png') center 100% no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#coverTeam {
+    background: #171e34  src=('https://2019.igem.org/wiki/images/9/94/T--USP_SaoCarlos-Brazil--Time.jpg') center 100% no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cover2 {
+    background: #000}
+#iaraContainer {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s ease-in-out;
+    margin-left: -20px;
+}
+
+#iaraContainer img {
+    height: 60px;
+    margin-left: 20px;
+}
+
+#iaraContainer:hover {
+    width: 52%;
+}
+
+#titleWaveContainer {
+    width: 100%;
+    margin-top:40px;
+}
+
+#titleWaveContainer polyline {
+    fill: none;
+    stroke: url(#gradient);
+    stroke-linecap: round;
+}
+
+.wavyContainer {
+    display:flex;
+    margin-top: -52px;
+    flex-direction: column;
+    height: auto;
+    padding: 60px;
+}
+
+.wavyContainer:nth-child(odd) {
+    background: #288589;
+
+}
+
+.wavyContainer:nth-child(even) {
+    background: #A3D5C7;
+
+}
+
+/*///////////////////////
+Header
+//////////////////////*/
+
+#header {
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 16px;
+  right: 0;
+  height: 48px;
+  z-index: 3;
+  transition: all 0.5s ease;
+}
+
+#header #logo {
+  display: inline;
+  padding: 6px 0 0 0;
+}
+
+#header #logo h1 {
+  color: #505050;
+  font-family: "Philosopher", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+#header #logo h1 a {
+  color: #555;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#header #logo h1 a span {
+  color: #71c55d;
+}
+
+#header #logo img {
+  padding-top: 7px;
+  margin: 0;
+}
+
+.scroll-header {
+  background: #0F0;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+/*///////////////////////
+Navbar
+//////////////////////*/
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+/* Nav Menu Arrows */
+.sf-arrows .sf-with-ul {
+  padding-right: 22px;
+}
+
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 8px;
+  margin-top: 1px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
+/* Nav Meu Container */
+#nav-menu-container {
+  float: right;
+  margin: 0 0 0 0;
+}
+
+@media (max-width: 1024px) {
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+/* Nav Meu Styling */
+.nav-menu a {
+  padding: 8px 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: #555;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  outline: none;
+  letter-spacing: 0;
+  transition: 0.3s;
+}
+
+.nav-menu li:hover > a, .nav-menu > .menu-active > a {
+  color: #DF6E47;
+}
+
+.nav-menu > li {
+  margin-left: 10px;
+}
+
+.nav-menu ul {
+  margin: 0;
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #fff;
+}
+
+.nav-menu ul li {
+  transition: 0.3s;
+}
+
+.nav-menu ul li a {
+  padding: 5px 10px;
+  color: #DF6E47;
+  transition: 0.3s;
+  display: block;
+  font-size: 14px;
+  text-transform: none;
+}
+
+.nav-menu ul li:hover > a {
+  color: #71c55d;
+}
+
+.nav-menu ul ul {
+  margin: 0;
+}
+
+/* Mobile Nav Toggle */
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 4px 20px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+  color: #555;
+  font-size: 24px;
+}
+
+@media (max-width: 1024px) {
+  #mobile-nav-toggle {
+    display: inline;
+  }
+}
+
+/* Mobile Nav Styling */
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(52, 59, 64, 0.9);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 6px 22px 6px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+  letter-spacing: 0;
+}
+
+#mobile-nav ul li a:hover {
+  color: #fff;
+}
+
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #DF6E47;
+}
+
+#mobile-nav ul .menu-item-active {
+  color: #71c55d;
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(52, 59, 64, 0.9);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle i {
+  color: #fff;
+}
+
+
+</style>
+
+
+</html>
