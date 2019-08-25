@@ -1,15 +1,23 @@
-<html> 
+<html>
 
 <!--Gets rid of pesky iGEM wiki formatting-->
 
 
 <style type="text/css">
+:root {
+  --fundo: #171e34;
+  --verde: #66be97;
+  --verdao: #288589;
+  --laranja: #eeaa59;
+  --laranjao: #df6e47;
+}
+
 #home_logo, #sideMenu { display:none; }
-	#sideMenu, #top_title, .patrollink  {display:none;}
-	#content { margin-left:0px; margin-top:-7px; padding:0px; width:100%;line-height:1;}
-	body {background-color:white; }
-	#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
-	.judges-will-not-evaluate { border: 4px solid #e4dede; padding: 2% !important; width: 92%!important;}
+  #sideMenu, #top_title, .patrollink  {display:none;}
+  #content { margin-left:0px; margin-top:-7px; padding:0px; width:100%;line-height:1;}
+  body {background-color:white; }
+  #bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
+  .judges-will-not-evaluate { border: 4px solid #e4dede; padding: 2% !important; width: 92%!important;}
 #top_menu_under{
 height: 7px;
 }
@@ -23,7 +31,7 @@ top:16px;
 }
 
 #HQ_page h1, h2, h3, h4, h5{
-font-family: inherit;
+font-family: 'Montserrat', sans-serif;
 }
 
 /* table reboot from wiki */
@@ -48,15 +56,52 @@ font-weight:300 !important;
 }
 
 #HQ_page p{
-font-family: inherit;
+font-family: 'Montserrat', sans-serif;
 font-size: 100%;
 }
 #bodyContent a[href ^="https://"], .link-https {
     padding-right: 0px;
 }
+
+/*//////////////////////
+navbar
+//////////////////////*/
+.dropdown-item, .dropdown-item:visited {
+    color: #EEAA59;
+font-family: 'Montserrat', sans-serif;
+}
+.navbar{
+  background-color:#000
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #DF6E47;
+    background-color: black;
+    font-size:20px;
+font-family: 'Montserrat', sans-serif;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+.dropdown-menu{
+background-color: #000
+}
+.dropdown-item, .dropdown-item:visited{
+color: ;
+}
+
+.dropdown-item:hover, .dropdown-item.active, .dropdown-item:active{
+color: black;
+font-family: 'Montserrat', sans-serif;
+background-color: rgba(0, 158, 198,1);
+}
 /*///////////////////////
 Barra de Progresso
 //////////////////////*/
+
 
 .card, .card-header {
   line-height: 18px;
@@ -162,7 +207,7 @@ Cards time
 }
 
 section {
-    padding: 60px 0;
+    padding: 22px 0;
 }
 
 section .section-title {
@@ -176,6 +221,9 @@ section .section-title {
     border: none;
     background: #DF6E47;
 }
+.card {
+border:none;
+}
 
 .image-flip:hover .backside,
 .image-flip.hover .backside {
@@ -184,7 +232,7 @@ section .section-title {
     -o-transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
     transform: rotateY(0deg);
-    border-radius: .25rem;
+    border-radius:.25rem;
 }
 
 .image-flip:hover .frontside,
@@ -301,28 +349,16 @@ Capa Iara e container
     justify-content: center;
     align-items: center;
 }
-#coverTeam {
-    background: #171e34  src=('https://2019.igem.org/wiki/images/9/94/T--USP_SaoCarlos-Brazil--Time.jpg') center 100% no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 #cover2 {
     background: #000}
 #iaraContainer {
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     transition: 1s ease-in-out;
     margin-left: -20px;
+    padding-top: 100px;
 }
 
 #iaraContainer img {
@@ -413,240 +449,66 @@ Header
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
 }
 
-/*///////////////////////
-Navbar
-//////////////////////*/
-.nav-menu, .nav-menu * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+#footer{
+  background-color: #171e34;
+  font-family: 'Montserrat', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ 
 }
 
-.nav-menu ul {
-  position: absolute;
-  display: none;
-  top: 100%;
-  left: 0;
-  z-index: 99;
+.social img{
+    transition: transform 1s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
-.nav-menu li {
-  position: relative;
-  white-space: nowrap;
+.social:hover{
+transform: scale(1.2);
 }
 
-.nav-menu > li {
-  float: left;
+.sponsor{
+width: 70px;
+text-align: right;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
-  display: block;
+.sponsor img{
+    transition: transform 1s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.nav-menu ul ul {
-  top: 0;
-  left: 100%;
+.sponsor:hover{
+transform: scale(1.2);
 }
 
-.nav-menu ul li {
-  min-width: 180px;
+
+
+/* unvisited link */
+a:link {
+  color: var(--laranja);
 }
 
-/* Nav Menu Arrows */
-.sf-arrows .sf-with-ul {
-  padding-right: 22px;
+/* visited link */
+a:visited {
+  color: var(--laranja);
 }
 
-.sf-arrows .sf-with-ul:after {
-  content: "\f107";
-  position: absolute;
-  right: 8px;
-  margin-top: 1px;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
+/* mouse over link */
+a:hover {
+  color: var(--laranjao);
 }
 
-.sf-arrows ul .sf-with-ul:after {
-  content: "\f105";
+/* selected link */
+a:active {
+  color: var(--laranjao);
 }
-
-/* Nav Meu Container */
-#nav-menu-container {
-  float: right;
-  margin: 0 0 0 0;
-}
-
-@media (max-width: 1024px) {
-  #nav-menu-container {
-    display: none;
-  }
-}
-
-/* Nav Meu Styling */
-.nav-menu a {
-  padding: 8px 8px;
-  text-decoration: none;
-  display: inline-block;
-  color: #555;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  outline: none;
-  letter-spacing: 0;
-  transition: 0.3s;
-}
-
-.nav-menu li:hover > a, .nav-menu > .menu-active > a {
-  color: #DF6E47;
-}
-
-.nav-menu > li {
-  margin-left: 10px;
-}
-
-.nav-menu ul {
-  margin: 0;
-  padding: 10px;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  background: #fff;
-}
-
-.nav-menu ul li {
-  transition: 0.3s;
-}
-
-.nav-menu ul li a {
-  padding: 5px 10px;
-  color: #DF6E47;
-  transition: 0.3s;
-  display: block;
-  font-size: 14px;
-  text-transform: none;
-}
-
-.nav-menu ul li:hover > a {
-  color: #71c55d;
-}
-
-.nav-menu ul ul {
-  margin: 0;
-}
-
-/* Mobile Nav Toggle */
-#mobile-nav-toggle {
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 999;
-  margin: 4px 20px 0 0;
-  border: 0;
-  background: none;
-  font-size: 24px;
-  display: none;
-  transition: all 0.4s;
-  outline: none;
-  cursor: pointer;
-}
-
-#mobile-nav-toggle i {
-  color: #555;
-  font-size: 24px;
-}
-
-@media (max-width: 1024px) {
-  #mobile-nav-toggle {
-    display: inline;
-  }
-}
-
-/* Mobile Nav Styling */
-#mobile-nav {
-  position: fixed;
-  top: 0;
-  padding-top: 18px;
-  bottom: 0;
-  z-index: 998;
-  background: rgba(52, 59, 64, 0.9);
-  left: -260px;
-  width: 260px;
-  overflow-y: auto;
-  transition: 0.4s;
-}
-
-#mobile-nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-#mobile-nav ul li {
-  position: relative;
-}
-
-#mobile-nav ul li a {
-  color: #fff;
-  font-size: 14px;
-  overflow: hidden;
-  padding: 6px 22px 6px 15px;
-  position: relative;
-  text-decoration: none;
-  width: 100%;
-  display: block;
-  outline: none;
-  letter-spacing: 0;
-}
-
-#mobile-nav ul li a:hover {
-  color: #fff;
-}
-
-#mobile-nav ul li li {
-  padding-left: 30px;
-}
-
-#mobile-nav ul .menu-has-children i {
-  position: absolute;
-  right: 0;
-  z-index: 99;
-  padding: 15px;
-  cursor: pointer;
-  color: #fff;
-}
-
-#mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #DF6E47;
-}
-
-#mobile-nav ul .menu-item-active {
-  color: #71c55d;
-}
-
-#mobile-body-overly {
-  width: 100%;
-  height: 100%;
-  z-index: 997;
-  top: 0;
-  left: 0;
-  position: fixed;
-  background: rgba(52, 59, 64, 0.9);
-  display: none;
-}
-
-/* Mobile Nav body classes */
-body.mobile-nav-active {
-  overflow: hidden;
-}
-
-body.mobile-nav-active #mobile-nav {
-  left: 0;
-}
-
-body.mobile-nav-active #mobile-nav-toggle i {
-  color: #fff;
-}
-
 
 </style>
 
