@@ -4,12 +4,6 @@
 
 
 <style type="text/css">
-@font-face {
-	font-family: 'Norwester';
-	src:url('https://2019.igem.org/wiki/images/f/fd/T--USP_SaoCarlos-Brazil--Norwester.otf') format('opentype');
-	font-variant:normal; font-weight:normal;
-}
-
 :root {
   --fundo: #171e34;
   --verde: #66be97;
@@ -45,12 +39,13 @@ font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.2em;
 	color: var(--white);
 }
-h1.cabecalho{
-	text-align: center;
+#HQ_page li,ul{
+  font-family: 'Montserrat', sans-serif;
 }
 #HQ_page h2{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 200;
+	font-size: 36px;
 	letter-spacing: 0.2em;
 	color: var(--black);
 }
@@ -77,8 +72,8 @@ font-weight:300 !important;
 
 #HQ_page p{
 font-family: 'Montserrat', sans-serif;
+font-size: 20px;
 font-weight: 200;
-font-size: 16px;
 }
 #bodyContent a[href ^="https://"], .link-https {
     padding-right: 0px;
@@ -411,8 +406,8 @@ Capa Iara e container
 }
 
 .homeFolder {
-   outline: 10px solid var(--fundo);
-    outline-offset: -4px;
+   outline: 5px solid var(--fundo);
+    outline-offset: -1px;
 }
 
 .center {
@@ -498,9 +493,8 @@ Header
 
 }
 
-.social{transition: .3s;}
-
-.social img{;
+.social img{
+    transition: transform 1s ease;
     display: block;
     margin-left: auto;
     margin-right: auto
@@ -511,7 +505,6 @@ transform: scale(1.2);
 }
 
 .sponsor{
-transition: .3s;
 width: 70px;
 text-align: right;
     display: block;
@@ -553,30 +546,22 @@ a:active {
 }
 /* MEDIA QUERIES*/
 @media (min-width: 544px) {  
-  h1.cabecalho {font-size:3rem;} /*1rem = 16px*/
-	h2 {font-size:1.5rem;} 
-	p{font-size:1rem;} 
+  h1.cabecalho {font-size:2rem;} /*1rem = 16px*/
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
-  h1.cabecalho {font-size:4rem;} /*1rem = 16px*/
-	h2 {font-size:2rem;}
-	p{font-size:1rem;}  
+  h1.cabecalho {font-size:2.5rem;} /*1rem = 16px*/
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  h1.cabecalho {font-size:5rem;} /*1rem = 16px*/
-	h2 {font-size:2rem;}
-	p{font-size:1rem;}  
+  h1.cabecalho {font-size:3rem;} /*1rem = 16px*/
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
-  h1.cabecalho {font-size:6rem;} /*1rem = 16px*/  
-	h2 {font-size:2rem;}
-	p{font-size:1rem;}  
+  h1.cabecalho {font-size:5rem;} /*1rem = 16px*/    
 }
 
 </style>
