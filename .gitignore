@@ -108,3 +108,4 @@ venv.bak/
 
 # iGEM credentials file
 .credentials*
+**/*.DS_Store
