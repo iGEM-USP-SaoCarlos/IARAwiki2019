@@ -94,8 +94,8 @@ def main():
         authenticate(s)
 
         # Upload pages
-        upload_dir(PAGES_DIR, s)
         upload_dir(TEMPLATES_DIR, s, True)
+        upload_dir(PAGES_DIR, s)
 
 
 if __name__ == '__main__':
