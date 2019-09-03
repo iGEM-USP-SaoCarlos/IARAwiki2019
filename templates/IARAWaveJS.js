@@ -45,19 +45,24 @@ function zip (Xs, t, width, height, wlen) {
 
 var xsRev = [...xs]
 xsRev.reverse()
+let xy = []
 
 let t = 0
 
 function animateWave() {
+
     //Animate title waves
-    let xy = xsTitle.map(x => x+','+waveForm(x, t, width/2, 60, width/2)).join(' ')
+
+    xy = xsTitle.map(x => x+','+waveForm(x, t, width/2, 60, width/2)).join(' ')
     titleWave1.setAttribute('points', xy)
+
 
     xy = xsTitle.map(x => x+','+waveForm(x, t + delay, width/2, 60, width/2)).join(' ')
     titleWave2.setAttribute('points', xy)
-    console.log(titleWave2)
+
 
     //Animate containers' wavy borders
+
     for (var i = 0; i < wavyContainers.length; i++) {
 
   if (i%2) {
