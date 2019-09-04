@@ -139,7 +139,7 @@ h1.card-title, h2.card-title, h3.card-title, h4.card-title, h5.card-title, h6.ca
 }
 
 .progressBar {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .progressBar h4 {
@@ -147,13 +147,12 @@ h1.card-title, h2.card-title, h3.card-title, h4.card-title, h5.card-title, h6.ca
   text-transform: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  margin-bottom: 7px;
   margin-bottom: .33em;
 }
 
 .progressBarContainer {
   width: 100%;
-  max-width: 200px;
+  max-width: 250px;
   height: 5px;
   background: #e6eae3;
   background: rgba(8,102,220,.2);
@@ -170,23 +169,43 @@ h1.card-title, h2.card-title, h3.card-title, h4.card-title, h5.card-title, h6.ca
 
 .value-00 { width: 0; }
 
+.value-05 { width: 5%; }
+
 .value-10 { width: 10%;}
+
+.value-15 { width: 15%; }
 
 .value-20 { width: 20%;}
 
+.value-25 { width: 25%; }
+
 .value-30 { width: 30%;}
+
+.value-35 { width: 35%; }
 
 .value-40 { width: 40%; }
 
+.value-45 { width: 45%; }
+
 .value-50 { width: 50%; }
+
+.value-55 { width: 55%; }
 
 .value-60 { width: 60%; }
 
+.value-65 { width: 65%; }
+
 .value-70 { width: 70%;}
+
+.value-75 { width: 75%; }
 
 .value-80 { width: 80%; }
 
+.value-85 { width: 85%; }
+
 .value-90 { width: 90%; }
+
+.value-95 { width: 95%; }
 
 .value-100 { width: 100%; }
 
@@ -336,7 +355,9 @@ border:none;
     font-size: 12px;
     color: #007b5e !important;
 }
-
+.card-body{
+    padding:0.5rem;
+}
 .frontside .card .card-title,
 .backside .card .card-title {
     color: #007b5e !important;
@@ -406,8 +427,6 @@ Capa Iara e container
 }
 
 .homeFolder {
-   outline: 5px solid var(--fundo);
-    outline-offset: -1px;
 }
 
 .center {
@@ -422,6 +441,8 @@ Capa Iara e container
     flex-direction: column;
     height: auto;
     padding: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .wavyContainer:nth-child(odd) {
@@ -544,24 +565,49 @@ a:hover {
 a:active {
   color: var(--laranjao);
 }
+
 /* MEDIA QUERIES*/
-@media (min-width: 544px) {  
-  h1.cabecalho {font-size:2rem;} /*1rem = 16px*/
+@media (min-width: 1px) {  
+  h1.cabecalho {font-size:2rem;}
+  h2 {font-size:0.75rem; }
+  div.wavyOverlay{margin-top: -30vh}
+  div.innerOverlay{padding-bottom: 20vh}
+  
+   /*1rem = 16px*/
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
-  h1.cabecalho {font-size:2.5rem;} /*1rem = 16px*/
+  h1.cabecalho {font-size:2.5rem;}
+  h2 {font-size:1.5rem; }
+  div.wavyOverlay{margin-top: -35vh}
+  div.innerOverlay{padding-bottom: 20vh}
+  /*1rem = 16px*/
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  h1.cabecalho {font-size:3rem;} /*1rem = 16px*/
+  h1.cabecalho {font-size:3rem;}
+  h2 {font-size:2rem; }
+  .wavyContainer{
+    padding-left: 40px;
+    padding-right: 40px;
+    }
+  div.wavyOverlay{margin-top: -35vh}
+  div.innerOverlay{padding-bottom: 25vh}
+  /*1rem = 16px*/
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
-  h1.cabecalho {font-size:5rem;} /*1rem = 16px*/    
+  h1.cabecalho {font-size:5rem;}
+  h2 {font-size:4rem;}
+  .wavyContainer{
+    padding-left: 40px;
+    padding-right: 40px;
+    } /*1rem = 16px*/
+  div.wavyOverlay{margin-top: -40vh}
+  div.innerOverlay{padding-bottom: 30vh}
 }
 
 </style>
