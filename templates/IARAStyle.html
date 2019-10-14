@@ -4,12 +4,6 @@
 
 
 <style type="text/css">
-@font-face {
-	font-family: 'Norwester';
-	src:url('https://2019.igem.org/wiki/images/f/fd/T--USP_SaoCarlos-Brazil--Norwester.otf') format('opentype');
-	font-variant:normal; font-weight:normal;
-}
-
 :root {
   --fundo: #171e34;
   --verde: #66be97;
@@ -21,11 +15,11 @@
 #home_logo, #sideMenu { display:none; }
   #sideMenu, #top_title, .patrollink  {display:none;}
   #content { margin-left:0px; margin-top:-7px; padding:0px; width:100%;line-height:1;}
-  body {background-color:white; }
+  body {background-color:var(--fundo); }
   #bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
   .judges-will-not-evaluate { border: 4px solid #e4dede; padding: 2% !important; width: 92%!important;}
 #top_menu_under{
-height: 7px;
+height: 0px;
 }
 
 #globalWrapper{
@@ -37,7 +31,7 @@ top:16px;
 }
 
 #HQ_page h3, h4, h5{
-font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat', sans-serif;    font-weight: 200;
 }
 #HQ_page h1{
 	font-family: 'Montserrat', sans-serif;
@@ -45,18 +39,19 @@ font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.2em;
 	color: var(--white);
 }
-h1.cabecalho{
-	text-align: center;
+#HQ_page li,ul{
+  font-family: 'Montserrat', sans-serif;
 }
 #HQ_page h2{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 200;
+	font-size: 36px;
 	letter-spacing: 0.2em;
 	color: var(--black);
 }
 /* table reboot from wiki */
 #HQ_page th {
-background-color:rgba(0, 158, 198,0.3);
+background-color: rgb(23,30,52,1);
 color: inherit;
 }
 #HQ_page table .highlightBox {
@@ -65,6 +60,7 @@ background-color:rgba(0, 158, 198,1);
 #HQ_page table {
 margin-right: 0;
 margin-left: 0;
+backgroud-color:unset;
 }
 
 table{
@@ -77,8 +73,8 @@ font-weight:300 !important;
 
 #HQ_page p{
 font-family: 'Montserrat', sans-serif;
+font-size: 20px;
 font-weight: 200;
-font-size: 16px;
 }
 #bodyContent a[href ^="https://"], .link-https {
     padding-right: 0px;
@@ -88,21 +84,31 @@ font-size: 16px;
 navbar
 //////////////////////*/
 .dropdown-item, .dropdown-item:visited {
-    color: #EEAA59;
-		font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    transition: .5s
 }
 .navbar{
-  background-color:#000
+  background-color:black
 }
 .navbar-dark .navbar-nav .nav-link {
-    color: #DF6E47;
+    color: white;
     background-color: black;
-    font-size:20px;
-		font-family: 'Montserrat', sans-serif;
+    font-size:16px;
+    font-family: 'Montserrat', sans-serif;
+    transition: .5s;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+.dropdown-item:hover {
+    letter-spacing: 4px;
+    background-color: black;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    letter-spacing: 4px;
 }
 a:hover, a:focus {
     text-decoration: wavy;
-    text-shadow: 0 0 var(--laranjao);
 }
 .dropdown:hover > .dropdown-menu {
     display: block;
@@ -115,18 +121,16 @@ a:hover, a:focus {
 background-color: #000
 }
 .dropdown-item, .dropdown-item:visited{
-color: ;
+        color: white;
+        letter-spacing: 2px;
+        font-weight: 200;
 }
 
 .dropdown-item:hover, .dropdown-item.active, .dropdown-item:active{
-	color: var(--laranja);
+	color: white;
 	font-family: 'Montserrat', sans-serif;
-	text-shadow: 0px 0px var(--laranja);
 }
-.dropdown-item:focus, .dropdown-item:hover {
-    color: #16181b;
-    background-color:#000;
-}
+
 /*///////////////////////
 Barra de Progresso
 //////////////////////*/
@@ -144,7 +148,7 @@ h1.card-title, h2.card-title, h3.card-title, h4.card-title, h5.card-title, h6.ca
 }
 
 .progressBar {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .progressBar h4 {
@@ -152,13 +156,12 @@ h1.card-title, h2.card-title, h3.card-title, h4.card-title, h5.card-title, h6.ca
   text-transform: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  margin-bottom: 7px;
   margin-bottom: .33em;
 }
 
 .progressBarContainer {
   width: 100%;
-  max-width: 200px;
+  max-width: 250px;
   height: 5px;
   background: #e6eae3;
   background: rgba(8,102,220,.2);
@@ -170,28 +173,48 @@ h1.card-title, h2.card-title, h3.card-title, h4.card-title, h5.card-title, h6.ca
   height: 10px;
   float: left;
   background: #0866dc;
-  background: rgba(8,102,220,.75);
+
 }
 
 .value-00 { width: 0; }
 
+.value-05 { width: 5%; }
+
 .value-10 { width: 10%;}
+
+.value-15 { width: 15%; }
 
 .value-20 { width: 20%;}
 
+.value-25 { width: 25%; }
+
 .value-30 { width: 30%;}
+
+.value-35 { width: 35%; }
 
 .value-40 { width: 40%; }
 
+.value-45 { width: 45%; }
+
 .value-50 { width: 50%; }
+
+.value-55 { width: 55%; }
 
 .value-60 { width: 60%; }
 
+.value-65 { width: 65%; }
+
 .value-70 { width: 70%;}
+
+.value-75 { width: 75%; }
 
 .value-80 { width: 80%; }
 
+.value-85 { width: 85%; }
+
 .value-90 { width: 90%; }
+
+.value-95 { width: 95%; }
 
 .value-100 { width: 100%; }
 
@@ -341,7 +364,9 @@ border:none;
     font-size: 12px;
     color: #007b5e !important;
 }
-
+.card-body{
+    padding:0.5rem;
+}
 .frontside .card .card-title,
 .backside .card .card-title {
     color: #007b5e !important;
@@ -411,8 +436,6 @@ Capa Iara e container
 }
 
 .homeFolder {
-   outline: 10px solid var(--fundo);
-    outline-offset: -4px;
 }
 
 .center {
@@ -427,16 +450,10 @@ Capa Iara e container
     flex-direction: column;
     height: auto;
     padding: 60px;
-}
-
-.wavyContainer:nth-child(odd) {
-    background: #288589;
-
-}
-
-.wavyContainer:nth-child(even) {
-    background: #A3D5C7;
-
+    padding-left: 15px;
+    padding-right: 15px;
+    color:white; 
+    background-image: linear-gradient(to bottom, var(--verdao), var(--fundo))
 }
 
 /*///////////////////////
@@ -489,94 +506,101 @@ Header
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
 }
 
-#footer{
-  background-color: #171e34;
-  font-family: 'Montserrat', sans-serif;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.social{transition: .3s;}
-
-.social img{;
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-}
-
-.social:hover{
-transform: scale(1.2);
-}
-
-.sponsor{
-transition: .3s;
-width: 70px;
-text-align: right;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.sponsor img{
-    transition: transform 1s ease;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.sponsor:hover{
-transform: scale(1.2);
-}
-
-
-
 /* unvisited link */
 a:link {
-  color: var(--laranja);
+  color: white;
 }
 
 /* visited link */
 a:visited {
-  color: var(--laranja);
+  color: white;
 }
 
 /* mouse over link */
 a:hover {
-  color: var(--laranjao);
+  color: white;
 }
 
 /* selected link */
 a:active {
-  color: var(--laranjao);
+  color: white;
 }
+
+.cabecalho {
+  margin-left: 200px;
+}
+
+
 /* MEDIA QUERIES*/
-@media (min-width: 544px) {  
-  h1.cabecalho {font-size:3rem;} /*1rem = 16px*/
-	h2 {font-size:1.5rem;} 
-	p{font-size:1rem;} 
+@media (min-width: 1px) {  
+  h1.cabecalho {font-size:2rem; padding-top:3rem; padding-bottom:4rem;}
+  h2 {font-size:0.75rem; }
+  div.wavyOverlay{margin-top: -30vh}
+  div.innerOverlay{padding-bottom: 20vh}
+  
+   /*1rem = 16px*/
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
-  h1.cabecalho {font-size:4rem;} /*1rem = 16px*/
-	h2 {font-size:2rem;}
-	p{font-size:1rem;}  
+  h1.cabecalho {font-size:2.5rem; padding-top:3rem; margin-bottom:4rem;}
+  h2 {font-size:1rem; }
+  div.wavyOverlay{margin-top: -35vh}
+  div.innerOverlay{padding-bottom: 20vh}
+  /*1rem = 16px*/
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  h1.cabecalho {font-size:5rem;} /*1rem = 16px*/
-	h2 {font-size:2rem;}
-	p{font-size:1rem;}  
+  h1.cabecalho {font-size:3rem; padding-top:4rem; margin-bottom:5rem;}
+  h2 {font-size:2rem; }
+  .wavyContainer{
+    padding-left: 40px;
+    padding-right: 40px;
+    }
+  div.wavyOverlay{margin-top: -35vh}
+  div.innerOverlay{padding-bottom: 25vh}
+  /*1rem = 16px*/
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
-  h1.cabecalho {font-size:6rem;} /*1rem = 16px*/  
-	h2 {font-size:2rem;}
-	p{font-size:1rem;}  
+  h1.cabecalho {font-size:5rem; padding-top:7rem; margin-bottom:8rem;}
+  h2 {font-size:4rem;}
+  .wavyContainer{
+    padding-left: 40px;
+    padding-right: 40px;
+    } /*1rem = 16px*/
+  div.wavyOverlay{margin-top: -50vh}
+  div.innerOverlay{padding-bottom: 40vh}
+}
+
+/*Vertical space after br*/
+br{line-height: 200%;} 
+
+p{line-height: 140%;
+/*justification with hyphens, works only on safari and chrome*/
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+-ms-hyphens: auto;
+hyphens: auto;
+} 
+
+/*Vertical space after br*/
+br{line-height: 250%;} 
+
+.navbar-brand {
+  height: 40px;
+
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+  transition: .5s;
+}
+
+.navbar-brand:hover img {
+  margin-right:20px;
 }
 
 </style>

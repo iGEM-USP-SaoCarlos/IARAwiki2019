@@ -1,45 +1,93 @@
 <html>
-<div id="footer" class="container-fluid wavyContainer" style= "margin-bottom:-100px; text-align: center; padding-top: 100px">
+<style>
+
+#footer{
+  background-color: #171e34;
+  font-family: 'Montserrat', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.social{
+    transition: .2s ease;
+width: 3em;
+}
+
+.social img{
+    transition: transform 1s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.social:hover{
+transform: scale(1.2);
+}
+
+.sponsor{
+width: 8em;
+text-align: right;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .3s ease;
+}
+
+.sponsor img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sponsor:hover{
+transform: scale(1.2);
+}
+
+
+</style>
+<div id="footer" class="container-fluid wavyContainer" style= "margin-bottom:-2em; padding-top:7em; text-align: center; background-image:linear-gradient(to bottom, var(--verde),var(--verdao))">
 
 <div class="container-fluid" style = "color:white; text-align:center">
 	<div class="row">
 		<div class="col-12 col-md-2"> <!-- CONTACT -->
 			<div class="row mb-3">
-				<div class="col-12" style="text-align: center; color=var(--laranja)"> CONTACT</div>
+				<div class="col-12" style="text-align: center; color=var(--laranja); font-size:2em"> CONTACT</div>
 			</div><!-- r -->
 
 			<div class="row mb-3">
 				<div class="col-4">
 					<a href="https://www.facebook.com/iGEM.USPSaoCarlos/">
-						<img class = "social" src="https://2019.igem.org/wiki/images/d/d8/T--USP_SaoCarlos-Brazil--facebook-icon.svg"  alt="facebook logo" style="width:30px; height:30"  />
+						<img class = "social" src="https://2019.igem.org/wiki/images/d/d8/T--USP_SaoCarlos-Brazil--facebook-icon.svg"  alt="facebook logo"  />
 					</a>
 				</div>
 
 				<div class="col-4">
 
 				<a href="https://www.instagram.com/igem_uspsaocarlos/">
-					<img class = "social" src="https://2019.igem.org/wiki/images/b/b8/T--USP_SaoCarlos-Brazil--instagram-icon.svg"  alt="instagram logo" style="width:30px; height:30"  />
+					<img class = "social" src="https://2019.igem.org/wiki/images/b/b8/T--USP_SaoCarlos-Brazil--instagram-icon.svg"  alt="instagram logo" />
 				</a>
 				</div>
 
 				<div class="col-4">
 
 				<a href="https://twitter.com/iGEM_USP">
-					<img class = "social" src="https://2019.igem.org/wiki/images/4/4a/T--USP_SaoCarlos-Brazil--twitter-icon.svg"  alt="twitter logo" style="width:30px; height:30"  />
+					<img class = "social" src="https://2019.igem.org/wiki/images/4/4a/T--USP_SaoCarlos-Brazil--twitter-icon.svg"  alt="twitter logo"  />
 				</a>
 
 				</div>
 			</div><!-- r -->
 
 			<div class="row align-items-center mb-3" style="text-align:center">
-				<div class="col-2 col-xs-2"  style = "text-align:center">
+				<div class="col-4"  style = "text-align:center">
 
 				<a href="mailto:igem@ifsc.usp.br">
-					<img class = "social" src="https://2019.igem.org/wiki/images/c/c7/T--USP_SaoCarlos-Brazil--email-icon.svg"  alt="email icon" style="width:30px; height:30"  />
+					<img class = "social center" src="https://2019.igem.org/wiki/images/c/c7/T--USP_SaoCarlos-Brazil--email-icon.svg"  alt="email icon"  />
 				</a>
 				</div>
 
-				<div class="col-10 col-xs-10" style="text-align: left;">
+				<div class="col-8" style="text-align: left;">
 					igem@ifsc.usp.br
 				</div>
 			</div><!-- r -->
@@ -47,7 +95,7 @@
 		</div>
 		<div class="col-xs-12 col-md-10"> <!-- SPONSORS -->
 			<div class="row mb-3">
-				<div class="col-12" style="text-align: center;"> SPONSORS</div>
+				<div class="col-12" style="text-align: center; font-size:2em"> SPONSORS</div>
 			</div><!-- r -->
 
 			<div class="row align-items-center mb-4">
@@ -75,11 +123,11 @@
 				</a>
 				</div>
 
-				<!-- <div class="col">
+				<div class="col">
 				<a href="http://prceu.usp.br/">
 					<img class = "sponsor" src="https://2019.igem.org/wiki/images/4/4b/T--USP_SaoCarlos-Brazil--pr-cult.svg"  alt="Pró-reitoria de cultura e extensão" />
 				</a>
-				</div> -->
+				</div>
 
 				<div class="col">
 				<a href="https://www2.ifsc.usp.br/english/grupo-de-biofisica-molecular-sergio-mascarenhas/">
@@ -111,19 +159,13 @@
 				</a>
 				</div>
 
-
-			</div><!-- r -->
-			
-
-
+				<div class="col">
+				<a href="https://www.neb.uk.com/">
+					<img class = "sponsor" src="https://2019.igem.org/wiki/images/c/ce/T--USP_SaoCarlos-Brazil--neb.svg"  alt="New England Biolabs"/>
+				</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
-
-<style>
-body{background-color:var(--fundo)}
-
-HQ_page p{display: none}
-</style>
-
 </html>

@@ -1,55 +1,289 @@
 {{USP_SaoCarlos-Brazil/IARA}}
 <html> 
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-<script>
-// Scroll Down Icon
-$(document).ready(function() {
-    // Add smooth scrolling to all links
-    $("#goTo").on('click', function(event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-            // Store hash
-            var hash = this.hash;
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function() {
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-        } // End if
-    });
-});
-$(document).ready(function () {
-$(".reg").click(function () {
- $(".pop").fadeOut(100);
- $(this).next().fadeIn(300);
-});
-$(".pop > span, .pop").click(function () {
- $(".pop").fadeOut(300);
-});
-});
-</script>
 <polyline id='wave1' stroke-width='3' /><!-- desnecessauro, mas num funfa sem issaquê -->
 <polyline id='wave2' stroke-width='1' /><!-- desnecessauro, mas num funfa sem issaquê -->
 <!-- Imagem do time -->
 <div>
- <img class="img-fluid" src="https://2019.igem.org/wiki/images/9/94/T--USP_SaoCarlos-Brazil--Time.jpg" alt="Team of São Carlos">
+  <img class="img-fluid" src="https://2019.igem.org/wiki/images/9/94/T--USP_SaoCarlos-Brazil--Time.jpg" alt="Team of São Carlos">
 </div>
 <!-- Sobre o time -->
 <div class="container-fluid wavyContainer">
-  <h2 style="display:block;margin-left:auto;margin-right:auto;">OUR TEAM</h2>
-    <p style="text-align: center;margin-left:auto;margin-right:auto;font-size:20px">
-      We are students of the University of São Paulo (USP), with campus located in São Carlos, SP - Brazil.<br>
+  <h2>OUR TEAM</h2>
+    <p>
+      We are students of the São Carlos capus of University of São Paulo (USP), located in the São Paulo state - Brazil.<br>
       Our team consists of undergraduate and graduate students in Biomolecular Physics, along with professors from our institute.
     </p>
 </div>
 <!-- Primeiro Container de Time -->
-<div class="container-fluid wavyContainer"><h2>TEAM MEMBERS</h2>
+<div class="container-fluid wavyContainer">
+  <h2>TEAM MEMBERS</h2>
   <!-- Primeiro Fileira de Time -->
+  <div class="row justify-content-center">
+    <div class="d-flex justify-content-center col-sm-12 col-md-6 col-xl-3">
+      <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="mainflip">
+          <div class="frontside">
+            <div class="card card-accent-dark" style="width:300px;height:300px">
+              <img class="card-img" src="https://2019.igem.org/wiki/images/5/5c/T--USP_SaoCarlos-Brazil--GianeTeamPage.jpg" alt="Card image">
+            </div>
+          </div>
+          <div class="backside">
+            <div class="card card-accent-dark" style="width:300px;height:300px" >
+              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Giane Corrêa Ferreira 
+                <h6 class="card-subtitle"> Undergrad. in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Leader </span></h6>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Attributions</h5>
+                <div class="contentContainer" style="width:280px">
+                  <div class="progressBar">
+                    <h4>Wiki Development</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-15" style="background: #288589"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Marketing and Divulgation</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-80"style="background: #288589"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Administrative</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-100" style="background: #EEAA59"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Hardware</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-100" style="background: #EEAA59"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Humans Practices</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-100" style="background: #EEAA59"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Experimental</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-15"style="background: #DF6E47"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Finances</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center col-sm-12 col-md-6 col-xl-3">
+      <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="mainflip">
+          <div class="frontside">
+            <div class="card card-accent-dark" style="width:300px;height:300px">
+              <img class="card-img" src="https://2019.igem.org/wiki/images/2/24/T--USP_SaoCarlos-Brazil--MajuTeamPage.jpg" alt="Card image">
+            </div>
+          </div>
+          <div class="backside">
+            <div class="card card-accent-dark" style="width:300px;height:300px" style="width:300px;height:300px" >
+                  <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Maria Júlia "Maju" Marques <h6 class="card-subtitle"> Undergrad. in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Attributions</h5>
+                    <div class="contentContainer">
+                      <div class="progressBar">
+                        <h4>Wiki Development</h4>
+                        <div class="progressBarContainer">
+                          <div class="progressBarValue value-0" style="background: #288589"></div>
+                        </div>
+                      </div>
+                      <div class="progressBar">
+                        <h4>Marketing and Divulgation</h4>
+                        <div class="progressBarContainer">
+                          <div class="progressBarValue value-100"style="background: #288589"></div>
+                        </div>
+                      </div>
+                      <div class="progressBar">
+                        <h4>Administrative</h4>
+                        <div class="progressBarContainer">
+                          <div class="progressBarValue value-0" style="background: #EEAA59"></div>
+                        </div>
+                      </div>
+                      <div class="progressBar">
+                        <h4>Hardware</h4>
+                        <div class="progressBarContainer">
+                          <div class="progressBarValue value-70" style="background: #EEAA59"></div>
+                        </div>
+                      </div>
+                      <div class="progressBar">
+                        <h4>Humans Practices</h4>
+                        <div class="progressBarContainer">
+                          <div class="progressBarValue value-100" style="background: #EEAA59"></div>
+                        </div>
+                      </div>
+                      <div class="progressBar">
+                        <h4>Experimental</h4>
+                        <div class="progressBarContainer">
+                          <div class="progressBarValue value-0"style="background: #DF6E47"></div>
+                        </div>
+                      </div>
+                      <div class="progressBar">
+                        <h4>Finances</h4>
+                        <div class="progressBarContainer">
+                          <div class="progressBarValue value-0"style="background: #DF6E47"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center col-sm-12 col-md-6 col-xl-3">
+      <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="mainflip">
+          <div class="frontside">
+            <div class="card">
+              <div class="card card-accent-dark" style="width:300px;height:300px">
+                <img class="card-img" src="https://2019.igem.org/wiki/images/7/7b/T--USP_SaoCarlos-Brazil--FrutaTeamPage.jpg" alt="Card image">
+              </div>
+            </div>
+          </div>
+          <div class="backside">
+            <div class="card card-accent-dark" style="width:300px;height:300px" style="width:300px;height:300px" >
+              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Roberto “Fruta” Furuta
+                <h6 class="card-subtitle"> Undergrad. in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Attributions</h5>
+                <div class="contentContainer">
+                  <div class="progressBar">
+                    <h4>Wiki Development</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-90" style="background: #288589"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Marketing and Divulgation</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-80"style="background: #288589"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Administrative</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Hardware</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-10" style="background: #EEAA59"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Humans Practices</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-30" style="background: #EEAA59"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Experimental</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-25"style="background: #DF6E47"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Finances</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-35"style="background: #DF6E47"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center col-sm-12 col-md-6 col-xl-3">
+      <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="mainflip">
+          <div class="frontside">
+            <div class="card">
+              <div class="card card-accent-dark" style="width:300px;height:300px">
+                <img class="card-img" src="https://2019.igem.org/wiki/images/4/4a/T--USP_SaoCarlos-Brazil--SlenderTeamPage.jpg" alt="Card image">
+              </div>
+            </div>
+          </div>
+          <div class="backside">
+            <div class="card card-accent-dark" style="width:300px;height:300px" style="width:300px;height:300px" >
+              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Vinicius El Khalili Borsato
+                <h6 class="card-subtitle"> Undergrad. in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Attributions</h5>
+              <div class="contentContainer">
+                <div class="progressBar">
+                  <h4>Wiki Development</h4>
+                  <div class="progressBarContainer">
+                    <div class="progressBarValue value-5" style="background: #288589"></div>
+                  </div>
+                </div>
+                <div class="progressBar">
+                  <h4>Marketing and Divulgation</h4>
+                  <div class="progressBarContainer">
+                    <div class="progressBarValue value-70"style="background: #288589"></div>
+                  </div>
+                </div>
+                <div class="progressBar">
+                  <h4>Administrative</h4>
+                  <div class="progressBarContainer">
+                    <div class="progressBarValue value-40" style="background: #EEAA59"></div>
+                  </div>
+                </div>
+                <div class="progressBar">
+                  <h4>Hardware</h4>
+                  <div class="progressBarContainer">
+                    <div class="progressBarValue value-5" style="background: #EEAA59"></div>
+                  </div>
+                </div>
+                <div class="progressBar">
+                  <h4>Humans Practices</h4>
+                  <div class="progressBarContainer">
+                    <div class="progressBarValue value-5" style="background: #EEAA59"></div>
+                  </div>
+                </div>
+                <div class="progressBar">
+                  <h4>Experimental</h4>
+                  <div class="progressBarContainer">
+                    <div class="progressBarValue value-70"style="background: #DF6E47"></div>
+                  </div>
+                </div>
+                <div class="progressBar">
+                  <h4>Finances</h4>
+                  <div class="progressBarContainer">
+                    <div class="progressBarValue value-5"style="background: #DF6E47"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- Segunda Fileira de Time -->
   <div class="row justify-content-center">
     <div class="col-xs-12 col-sm-12 d-flex justify-content-center col-md-6 col-xl-3">
       <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
@@ -62,7 +296,7 @@ $(".pop > span, .pop").click(function () {
           <div class="backside">
             <div class="card card-accent-dark" style="width:300px;height:300px">
               <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">André "Polegada" Jucovski
-                <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
+                <h6 class="card-subtitle"> Undergrad. in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Attributions</h5>
@@ -70,37 +304,42 @@ $(".pop > span, .pop").click(function () {
                   <div class="progressBar">
                     <h4>Wiki Development</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
+                      <div class="progressBarValue value-100" style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Marketing and Divulgation</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
+                      <div class="progressBarValue value-80"style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Administrative</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-10" style="background: #EEAA59"></div>
+                    </div>
+                  </div><div class="progressBar">
+                    <h4>Hardware</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-05" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Humans Practices</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-15" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Experimental</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-80"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-25"style="background: #DF6E47"></div>
                     </div>
                   </div>
                   <div class="progressBar">
-                    <h4>Financial</h4>
+                    <h4>Finances</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-30"style="background: #DF6E47"></div>
                     </div>
                   </div>
                 </div>
@@ -122,44 +361,50 @@ $(".pop > span, .pop").click(function () {
           </div>
           <div class="backside">
             <div class="card card-accent-dark" style="width:300px;height:300px" >
-              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Giancarlo "Gian" de Souza<h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member</span></h6></div>
+              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Giancarlo "Gian" de Souza<h6 class="card-subtitle"> Undergrad. in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member</span></h6></div>
               <div class="card-body">
                 <h5 class="card-title">Attributions</h5>
                 <div class="contentContainer">
                   <div class="progressBar">
                     <h4>Wiki Development</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
+                      <div class="progressBarValue value-0" style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Marketing and Divulgation</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
+                      <div class="progressBarValue value-20"style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Administrative</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-95" style="background: #EEAA59"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Hardware</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-85" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Humans Practices</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-90" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Experimental</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-80"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-05"style="background: #DF6E47"></div>
                     </div>
                   </div>
                   <div class="progressBar">
-                    <h4>Financial</h4>
+                    <h4>Finances</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-85"style="background: #DF6E47"></div>
                     </div>
                   </div>
                 </div>
@@ -182,7 +427,7 @@ $(".pop > span, .pop").click(function () {
           <div class="backside">
             <div class="card card-accent-dark" style="width:300px;height:300px" >
               <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Raquel “Tandy” Sterman
-                <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
+                <h6 class="card-subtitle"> Undergrad. in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Attributions</h5>
@@ -190,37 +435,43 @@ $(".pop > span, .pop").click(function () {
                   <div class="progressBar">
                     <h4>Wiki Development</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
+                      <div class="progressBarValue value-05" style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Marketing and Divulgation</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
+                      <div class="progressBarValue value-0"style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Administrative</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-0" style="background: #EEAA59"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Hardware</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-0" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Humans Practices</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-0" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Experimental</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-80"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-90"style="background: #DF6E47"></div>
                     </div>
                   </div>
                   <div class="progressBar">
-                    <h4>Financial</h4>
+                    <h4>Finances</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-15"style="background: #DF6E47"></div>
                     </div>
                   </div>
                 </div>
@@ -243,7 +494,7 @@ $(".pop > span, .pop").click(function () {
           <div class="backside">
             <div class="card card-accent-dark" style="width:300px;height:300px" >
               <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Amanda Araujo Silva
-                <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
+                <h6 class="card-subtitle"> Undergrad. in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Attributions</h5>
@@ -251,37 +502,43 @@ $(".pop > span, .pop").click(function () {
                   <div class="progressBar">
                     <h4>Wiki Development</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
+                      <div class="progressBarValue value-05" style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Marketing and Divulgation</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
+                      <div class="progressBarValue value-0"style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Administrative</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-05" style="background: #EEAA59"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Hardware</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-10" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Humans Practices</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-05" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Experimental</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-80"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
                     </div>
                   </div>
                   <div class="progressBar">
-                    <h4>Financial</h4>
+                    <h4>Finances</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-20"style="background: #DF6E47"></div>
                     </div>
                   </div>
                 </div>
@@ -305,7 +562,7 @@ $(".pop > span, .pop").click(function () {
           <div class="backside">
             <div class="card card-accent-dark" style="width:300px;height:300px" >
               <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Paulina “Zika” Rossi Ferreira
-                <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
+                <h6 class="card-subtitle"> Undergrad. in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Attributions</h5>
@@ -313,37 +570,43 @@ $(".pop > span, .pop").click(function () {
                   <div class="progressBar">
                     <h4>Wiki Development</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
+                      <div class="progressBarValue value-05" style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Marketing and Divulgation</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
+                      <div class="progressBarValue value-05"style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Administrative</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-60" style="background: #EEAA59"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Hardware</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-05" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Humans Practices</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-15" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Experimental</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-80"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-25"style="background: #DF6E47"></div>
                     </div>
                   </div>
                   <div class="progressBar">
-                    <h4>Financial</h4>
+                    <h4>Finances</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-60"style="background: #DF6E47"></div>
                     </div>
                   </div>
                 </div>
@@ -366,7 +629,7 @@ $(".pop > span, .pop").click(function () {
           <div class="backside">
             <div class="card card-accent-dark" style="width:300px;height:300px">
               <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Pedro “Aleluia” Ilidio
-                <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
+                <h6 class="card-subtitle"> Undergrad. in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Attributions</h5>
@@ -374,37 +637,43 @@ $(".pop > span, .pop").click(function () {
                   <div class="progressBar">
                     <h4>Wiki Development</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
+                      <div class="progressBarValue value-90" style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Marketing and Divulgation</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
+                      <div class="progressBarValue value-60"style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Administrative</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-0" style="background: #EEAA59"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Hardware</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-0" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Humans Practices</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-0" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Experimental</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-80"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-0"style="background: #DF6E47"></div>
                     </div>
                   </div>
                   <div class="progressBar">
-                    <h4>Financial</h4>
+                    <h4>Finances</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-0"style="background: #DF6E47"></div>
                     </div>
                   </div>
                 </div>
@@ -426,8 +695,8 @@ $(".pop > span, .pop").click(function () {
           </div>
           <div class="backside">
             <div class="card card-accent-dark" style="width:300px;height:300px" style="width:300px;height:300px" >
-              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Juliana “Ju” Naomi
-                <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
+              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;"> Juliana Naomi Yamauti Costa
+                <h6 class="card-subtitle"> Undergrad. in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Attributions</h5>
@@ -435,25 +704,31 @@ $(".pop > span, .pop").click(function () {
                   <div class="progressBar">
                     <h4>Wiki Development</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
+                      <div class="progressBarValue value-10" style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Marketing and Divulgation</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
+                      <div class="progressBarValue value-50"style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Administrative</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-5" style="background: #EEAA59"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Hardware</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-0" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Humans Practices</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-5" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
@@ -463,9 +738,9 @@ $(".pop > span, .pop").click(function () {
                     </div>
                   </div>
                   <div class="progressBar">
-                    <h4>Financial</h4>
+                    <h4>Finances</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-0"style="background: #DF6E47"></div>
                     </div>
                   </div>
                 </div>
@@ -488,7 +763,7 @@ $(".pop > span, .pop").click(function () {
           <div class="backside">
         <div class="card card-accent-dark" style="width:300px;height:300px" style="width:300px;height:300px" >
           <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Beatriz “Bretas” Saiani Bellini
-            <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
+            <h6 class="card-subtitle"> Undergrad. in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
           </div>
           <div class="card-body">
             <h5 class="card-title">Attributions</h5>
@@ -502,7 +777,7 @@ $(".pop > span, .pop").click(function () {
               <div class="progressBar">
                 <h4>Marketing and Divulgation</h4>
                 <div class="progressBarContainer">
-                  <div class="progressBarValue value-30"style="background: #288589"></div>
+                  <div class="progressBarValue value-0"style="background: #288589"></div>
                 </div>
               </div>
               <div class="progressBar">
@@ -512,21 +787,27 @@ $(".pop > span, .pop").click(function () {
                 </div>
               </div>
               <div class="progressBar">
+                <h4>Hardware</h4>
+                <div class="progressBarContainer">
+                  <div class="progressBarValue value-90" style="background: #EEAA59"></div>
+                </div>
+              </div>
+              <div class="progressBar">
                 <h4>Humans Practices</h4>
                 <div class="progressBarContainer">
-                  <div class="progressBarValue value-50" style="background: #EEAA59"></div>
+                  <div class="progressBarValue value-100" style="background: #EEAA59"></div>
                 </div>
               </div>
               <div class="progressBar">
                 <h4>Experimental</h4>
                 <div class="progressBarContainer">
-                  <div class="progressBarValue value-80"style="background: #DF6E47"></div>
+                  <div class="progressBarValue value-75"style="background: #DF6E47"></div>
                 </div>
               </div>
               <div class="progressBar">
-                <h4>Financial</h4>
+                <h4>Finances</h4>
                 <div class="progressBarContainer">
-                  <div class="progressBarValue value-100"style="background: #DF6E47"></div>
+                  <div class="progressBarValue value-95"style="background: #DF6E47"></div>
                 </div>
               </div>
             </div>
@@ -550,7 +831,7 @@ $(".pop > span, .pop").click(function () {
           <div class="backside">
             <div class="card card-accent-dark" style="width:300px;height:300px" >
               <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Luana Corsi
-                <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
+                <h6 class="card-subtitle"> Undergrad. in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Attributions</h5>
@@ -558,37 +839,43 @@ $(".pop > span, .pop").click(function () {
                   <div class="progressBar">
                     <h4>Wiki Development</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
+                      <div class="progressBarValue value-0" style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Marketing and Divulgation</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
+                      <div class="progressBarValue value-0"style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Administrative</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-5" style="background: #EEAA59"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Hardware</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-5" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Humans Practices</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-100" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Experimental</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-80"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
                     </div>
                   </div>
                   <div class="progressBar">
-                    <h4>Financial</h4>
+                    <h4>Finances</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-20"style="background: #DF6E47"></div>
                     </div>
                   </div>
                 </div>
@@ -611,7 +898,7 @@ $(".pop > span, .pop").click(function () {
           <div class="backside">
             <div class="card card-accent-dark" style="width:300px;height:300px" >
               <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Lucas “Vizinho” Grizotto
-                <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
+                <h6 class="card-subtitle"> Undergrad. in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Attributions</h5>
@@ -619,37 +906,43 @@ $(".pop > span, .pop").click(function () {
                   <div class="progressBar">
                     <h4>Wiki Development</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
+                      <div class="progressBarValue value-10" style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Marketing and Divulgation</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
+                      <div class="progressBarValue value-65"style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Administrative</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-5" style="background: #EEAA59"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Hardware</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-90" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Humans Practices</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Experimental</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-80"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
                     </div>
                   </div>
                   <div class="progressBar">
-                    <h4>Financial</h4>
+                    <h4>Finances</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-10"style="background: #DF6E47"></div>
                     </div>
                   </div>
                 </div>
@@ -672,7 +965,7 @@ $(".pop > span, .pop").click(function () {
           <div class="backside">
             <div class="card card-accent-dark" style="width:300px;height:300px" >
               <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">João Paulo “Soneca” Cassucci
-                <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
+                <h6 class="card-subtitle"> Undergrad. in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Attributions</h5>
@@ -680,37 +973,43 @@ $(".pop > span, .pop").click(function () {
                   <div class="progressBar">
                     <h4>Wiki Development</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
+                      <div class="progressBarValue value-0" style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Marketing and Divulgation</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
+                      <div class="progressBarValue value-0"style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Administrative</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-05" style="background: #EEAA59"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Hardware</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-0" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Humans Practices</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-0" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Experimental</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-80"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-95"style="background: #DF6E47"></div>
                     </div>
                   </div>
                   <div class="progressBar">
-                    <h4>Financial</h4>
+                    <h4>Finances</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-05"style="background: #DF6E47"></div>
                     </div>
                   </div>
                 </div>
@@ -733,7 +1032,7 @@ $(".pop > span, .pop").click(function () {
           <div class="backside">
             <div class="card card-accent-dark" style="width:300px;height:300px" >
               <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Nayla Naomi Takeuti
-                <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
+                <h6 class="card-subtitle"> Undergrad. in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Attributions</h5>
@@ -741,37 +1040,43 @@ $(".pop > span, .pop").click(function () {
                   <div class="progressBar">
                   <h4>Wiki Development</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
+                      <div class="progressBarValue value-05" style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Marketing and Divulgation</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
+                      <div class="progressBarValue value-10"style="background: #288589"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Administrative</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-05" style="background: #EEAA59"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h4>Hardware</h4>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-0" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Humans Practices</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
+                      <div class="progressBarValue value-05" style="background: #EEAA59"></div>
                     </div>
                   </div>
                   <div class="progressBar">
                     <h4>Experimental</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-80"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-70"style="background: #DF6E47"></div>
                     </div>
                   </div>
                   <div class="progressBar">
-                    <h4>Financial</h4>
+                    <h4>Finances</h4>
                     <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
+                      <div class="progressBarValue value-15"style="background: #DF6E47"></div>
                     </div>
                   </div>
                 </div>
@@ -784,67 +1089,8 @@ $(".pop > span, .pop").click(function () {
   </div>
 </div>
 <!-- Segundo Container de Time -->
-<div class="container-fluid wavyContainer"><h2>ADVISORS</h2>
+<div class="container-fluid wavyContainer"><h2>ADVISORS AND INSTRUCTORS</h2>
   <div class="row justify-content-center">
-    <div class="d-flex justify-content-center col-sm-12 col-md-6 col-xl-3">
-      <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-        <div class="mainflip">
-          <div class="frontside">
-            <div class="card card-accent-dark" style="width:300px;height:300px">
-              <img class="card-img" src="https://2019.igem.org/wiki/images/2/24/T--USP_SaoCarlos-Brazil--MajuTeamPage.jpg" alt="Card image">
-            </div>
-          </div>
-          <div class="backside">
-            <div class="card card-accent-dark" style="width:300px;height:300px" style="width:300px;height:300px" >
-                  <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Maria Júlia "Maju" Marques <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-danger" style="display:inline;font-size: 8px">Advisor </span></h6></div>
-                  <div class="card-body">
-
-                    <h5 class="card-title">Attributions</h5>
-
-                    <div class="contentContainer">
-                      <div class="progressBar">
-                        <h4>Wiki Development</h4>
-                        <div class="progressBarContainer">
-                          <div class="progressBarValue value-20" style="background: #288589"></div>
-                        </div>
-                      </div>
-                      <div class="progressBar">
-                        <h4>Marketing and Divulgation</h4>
-                        <div class="progressBarContainer">
-                          <div class="progressBarValue value-30"style="background: #288589"></div>
-                        </div>
-                      </div>
-                      <div class="progressBar">
-                        <h4>Administrative</h4>
-                        <div class="progressBarContainer">
-                          <div class="progressBarValue value-40" style="background: #EEAA59"></div>
-                        </div>
-                      </div>
-                      <div class="progressBar">
-                        <h4>Humans Practices</h4>
-                        <div class="progressBarContainer">
-                          <div class="progressBarValue value-50" style="background: #EEAA59"></div>
-                        </div>
-                      </div>
-                      <div class="progressBar">
-                        <h4>Experimental</h4>
-                        <div class="progressBarContainer">
-                          <div class="progressBarValue value-80"style="background: #DF6E47"></div>
-                        </div>
-                      </div>
-                      <div class="progressBar">
-                        <h4>Financial</h4>
-                        <div class="progressBarContainer">
-                          <div class="progressBarValue value-100"style="background: #DF6E47"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="d-flex justify-content-center col-sm-12 col-md-6 col-xl-3">
       <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
         <div class="mainflip">
@@ -858,48 +1104,13 @@ $(".pop > span, .pop").click(function () {
           <div class="backside">
             <div class="card card-accent-dark" style="width:300px;height:300px" style="width:300px;height:300px" >
               <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Nicolau “Nico” Barbosa Palma
-                <h6 class="card-subtitle"> Master in Applied Biomolecular Physics <span class="badge badge-pill badge-danger" style="display:inline;font-size: 8px">Advisor </span></h6>
+                <h6 class="card-subtitle"> M.S. student in Applied Biomolecular Physics <span class="badge badge-pill badge-danger" style="display:inline;font-size: 8px">Advisor </span></h6>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Attributions</h5>
-                <div class="contentContainer">
-                  <div class="progressBar">
-                    <h4>Wiki Development</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Marketing and Divulgation</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Administrative</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Humans Practices</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Experimental</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-80"style="background: #DF6E47"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Financial</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
-                    </div>
-                  </div>
-                </div>
+                <p style="font-size:16px">
+                  Nicolau had experiences in synthetic biology because of his undergraduate research. As a master and advisor to our team, he provided support during the structuring of our project, as well as providing protocol training for some members.
+                </p>
               </div>
             </div>
           </div>
@@ -912,241 +1123,21 @@ $(".pop > span, .pop").click(function () {
           <div class="frontside">
             <div class="card">
               <div class="card card-accent-dark" style="width:300px;height:300px">
-                <img class="card-img" src="https://2019.igem.org/wiki/images/7/7b/T--USP_SaoCarlos-Brazil--FrutaTeamPage.jpg" alt="Card image">
-              </div>
-            </div>
-          </div>
-          <div class="backside">
-            <div class="card card-accent-dark" style="width:300px;height:300px" style="width:300px;height:300px" >
-              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Roberto “Fruta” Furuta
-                <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-danger" style="display:inline;font-size: 8px">Advisor </span></h6>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Attributions</h5>
-                <div class="contentContainer">
-                  <div class="progressBar">
-                    <h4>Wiki Development</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Marketing and Divulgation</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Administrative</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Humans Practices</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Experimental</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-80"style="background: #DF6E47"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Financial</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="d-flex justify-content-center col-sm-12 col-md-6 col-xl-3">
-      <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-        <div class="mainflip">
-          <div class="frontside">
-            <div class="card">
-              <div class="card card-accent-dark" style="width:300px;height:300px">
-                <img class="card-img" src="https://2019.igem.org/wiki/images/4/4a/T--USP_SaoCarlos-Brazil--SlenderTeamPage.jpg" alt="Card image">
-              </div>
-            </div>
-          </div>
-          <div class="backside">
-            <div class="card card-accent-dark" style="width:300px;height:300px" style="width:300px;height:300px" >
-              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Vinicius El Khalili Borsato
-                <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-danger" style="display:inline;font-size: 8px">Advisor </span></h6>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Attributions</h5>
-              <div class="contentContainer">
-                <div class="progressBar">
-                  <h4>Wiki Development</h4>
-                  <div class="progressBarContainer">
-                    <div class="progressBarValue value-20" style="background: #288589"></div>
-                  </div>
-                </div>
-                <div class="progressBar">
-                  <h4>Marketing and Divulgation</h4>
-                  <div class="progressBarContainer">
-                    <div class="progressBarValue value-30"style="background: #288589"></div>
-                  </div>
-                </div>
-                <div class="progressBar">
-                  <h4>Administrative</h4>
-                  <div class="progressBarContainer">
-                    <div class="progressBarValue value-40" style="background: #EEAA59"></div>
-                  </div>
-                </div>
-                <div class="progressBar">
-                  <h4>Humans Practices</h4>
-                  <div class="progressBarContainer">
-                    <div class="progressBarValue value-50" style="background: #EEAA59"></div>
-                  </div>
-                </div>
-                <div class="progressBar">
-                  <h4>Experimental</h4>
-                  <div class="progressBarContainer">
-                    <div class="progressBarValue value-80"style="background: #DF6E47"></div>
-                  </div>
-                </div>
-                <div class="progressBar">
-                  <h4>Financial</h4>
-                  <div class="progressBarContainer">
-                    <div class="progressBarValue value-100"style="background: #DF6E47"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Terceiro Container de Time -->
-<div class="container-fluid wavyContainer"><h2>TEAM LEADER AND INSTRUCTORS</h2>
-  <div class="row justify-content-center">
-    <div class="d-flex justify-content-center col-sm-12 col-md-12 col-xl-3">
-      <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-        <div class="mainflip">
-          <div class="frontside">
-            <div class="card card-accent-dark" style="width:300px;height:300px">
-              <img class="card-img" src="https://2019.igem.org/wiki/images/0/0c/T--USP_SaoCarlos-Brazil--LuanaTeamPage.jpg" alt="Card image">
-            </div>
-          </div>
-          <div class="backside">
-            <div class="card card-accent-dark" style="width:300px;height:300px" >
-              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Luana Corsi
-                <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Attributions</h5>
-                <div class="contentContainer" style="width:280px">
-                  <div class="progressBar">
-                    <h4>Wiki Development</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Marketing and Divulgation</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Administrative</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Humans Practices</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Experimental</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-80"style="background: #DF6E47"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Financial</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="d-flex justify-content-center col-sm-12 col-md-6 col-xl-3">
-      <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-        <div class="mainflip">
-          <div class="frontside">
-            <div class="card">
-              <div class="card card-accent-dark" style="width:300px;height:300px">
-                <img class="card-img" src="https://2019.igem.org/wiki/images/6/6a/T--USP_SaoCarlos-Brazil--VizinhoTeamPage.jpg" alt="Card image">
+                <img class="card-img" src="https://2019.igem.org/wiki/images/d/db/T--USP_SaoCarlos-Brazil--CamilaTeamPage.jpg" alt="Card image">
               </div>
             </div>
           </div>
           <div class="backside">
             <div class="card card-accent-dark" style="width:300px;height:300px" >
-              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Lucas “Vizinho” Grizotto
-                <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
+              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Camila Bramorski
+                <h6 class="card-subtitle"> B.S. in Biomolecular Physics <span class="badge badge-pill badge-warning" style="display:inline;font-size: 8px">Instructor </span></h6>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Attributions</h5>
-                <div class="contentContainer">
-                  <div class="progressBar">
-                    <h4>Wiki Development</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Marketing and Divulgation</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Administrative</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Humans Practices</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Experimental</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-80"style="background: #DF6E47"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Financial</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
-                    </div>
-                  </div>
-                </div>
+                <p style='font-size:16px'>
+                  B.S. Research Assistant
+                  <br>Eligo Bioscience
+                </p>
               </div>
             </div>
           </div>
@@ -1159,55 +1150,21 @@ $(".pop > span, .pop").click(function () {
           <div class="frontside">
             <div class="card">
               <div class="card card-accent-dark" style="width:300px;height:300px">
-                <img class="card-img" src="https://2019.igem.org/wiki/images/3/3f/T--USP_SaoCarlos-Brazil--JotapeTeamPage.jpg" alt="Card image">
+                <img class="card-img" src="https://2019.igem.org/wiki/images/1/1a/T--USP_SaoCarlos-Brazil--RaissaTeamPage.jpg" alt="Card image">
               </div>
             </div>
           </div>
           <div class="backside">
             <div class="card card-accent-dark" style="width:300px;height:300px" >
-              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">João Paulo “Soneca” Cassucci
-                <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
+              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Raissa Ferreira Gutierrez
+                <h6 class="card-subtitle"> Ph.D. student in Biomolecular Physics <span class="badge badge-pill badge-warning" style="display:inline;font-size: 8px">Instructor </span>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Attributions</h5>
-                <div class="contentContainer">
-                  <div class="progressBar">
-                    <h4>Wiki Development</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Marketing and Divulgation</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Administrative</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Humans Practices</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Experimental</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-80"style="background: #DF6E47"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Financial</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
-                    </div>
-                  </div>
-                </div>
+                <p style='font-size:16px'>
+                  Ph.D. Student
+                  <br>University of São Paulo
+                </p>
               </div>
             </div>
           </div>
@@ -1219,59 +1176,25 @@ $(".pop > span, .pop").click(function () {
 <!-- Quarto Container de Time -->
 <div class="container-fluid wavyContainer"><h2>PRINCIPAL INVESTIGATORS (PROFESSORS)</h2>
   <div class="row justify-content-center">
-    <div class="d-flex justify-content-center col-sm-12 col-md-12 col-xl-3">
+    <div class="d-flex justify-content-center col-sm-12 col-md-6 col-xl-3">
       <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
         <div class="mainflip">
           <div class="frontside">
             <div class="card card-accent-dark" style="width:300px;height:300px">
-              <img class="card-img" src="https://2019.igem.org/wiki/images/0/0c/T--USP_SaoCarlos-Brazil--LuanaTeamPage.jpg" alt="Card image">
+              <img class="card-img" src="https://2019.igem.org/wiki/images/1/18/T--USP_SaoCarlos-Brazil--MarcosNavarro.jpg" alt="Card image">
             </div>
           </div>
           <div class="backside">
             <div class="card card-accent-dark" style="width:300px;height:300px" >
-              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Luana Corsi
-                <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
+              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Prof. Marcos Navarro
+                <h6 class="card-subtitle">  <span class="badge badge-pill badge-info" style="display:inline;font-size: 8px">Principal Investigator</span></h6>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Attributions</h5>
-                <div class="contentContainer" style="width:280px">
-                  <div class="progressBar">
-                    <h4>Wiki Development</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Marketing and Divulgation</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Administrative</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Humans Practices</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Experimental</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-80"style="background: #DF6E47"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Financial</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
-                    </div>
-                  </div>
-                </div>
+                <p style='font-size:16px'>
+                  Ph.D. Professor
+                  <br>University of São Paulo
+                </p>
               </div>
             </div>
           </div>
@@ -1284,116 +1207,21 @@ $(".pop > span, .pop").click(function () {
           <div class="frontside">
             <div class="card">
               <div class="card card-accent-dark" style="width:300px;height:300px">
-                <img class="card-img" src="https://2019.igem.org/wiki/images/6/6a/T--USP_SaoCarlos-Brazil--VizinhoTeamPage.jpg" alt="Card image">
+                <img class="card-img" src="https://2019.igem.org/wiki/images/5/5f/T--USP_SaoCarlos-Brazil--RafaelGuido.jpg" alt="Card image">
               </div>
             </div>
           </div>
           <div class="backside">
             <div class="card card-accent-dark" style="width:300px;height:300px" >
-              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Lucas “Vizinho” Grizotto
-                <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
+              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">Prof. Rafael Guido
+                <h6 class="card-subtitle"> <span class="badge badge-pill badge-info" style="display:inline;font-size: 8px">Principal Investigator</span></h6>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Attributions</h5>
-                <div class="contentContainer">
-                  <div class="progressBar">
-                    <h4>Wiki Development</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Marketing and Divulgation</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Administrative</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Humans Practices</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Experimental</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-80"style="background: #DF6E47"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Financial</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="d-flex justify-content-center col-sm-12 col-md-6 col-xl-3">
-      <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-        <div class="mainflip">
-          <div class="frontside">
-            <div class="card">
-              <div class="card card-accent-dark" style="width:300px;height:300px">
-                <img class="card-img" src="https://2019.igem.org/wiki/images/3/3f/T--USP_SaoCarlos-Brazil--JotapeTeamPage.jpg" alt="Card image">
-              </div>
-            </div>
-          </div>
-          <div class="backside">
-            <div class="card card-accent-dark" style="width:300px;height:300px" >
-              <div class="card-header bg-dark" style="font-family: 'Montserrat', sans-serif;">João Paulo “Soneca” Cassucci
-                <h6 class="card-subtitle"> Graduation in Biomolecular Physics <span class="badge badge-pill badge-success" style="display:inline;font-size: 8px">Team Member </span></h6>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Attributions</h5>
-                <div class="contentContainer">
-                  <div class="progressBar">
-                    <h4>Wiki Development</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-20" style="background: #288589"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Marketing and Divulgation</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-30"style="background: #288589"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Administrative</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-40" style="background: #EEAA59"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Humans Practices</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-50" style="background: #EEAA59"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Experimental</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-80"style="background: #DF6E47"></div>
-                    </div>
-                  </div>
-                  <div class="progressBar">
-                    <h4>Financial</h4>
-                    <div class="progressBarContainer">
-                      <div class="progressBarValue value-100"style="background: #DF6E47"></div>
-                    </div>
-                  </div>
-                </div>
+                <p style='font-size:16px'>
+                  Ph.D. Professor
+                  <br>University of São Paulo
+                </p>
               </div>
             </div>
           </div>
