@@ -1,0 +1,95 @@
+{{USP_SaoCarlos-Brazil/IARA}}
+<html>
+  <polyline id='wave1' stroke-width='3' /><!-- desnecessauro, mas num funfa sem issaquê -->
+  <polyline id='wave2' stroke-width='1' /><!-- desnecessauro, mas num funfa sem issaquê -->
+  <style>
+    .img-container{
+      position:relative;
+      display:inline-block;
+      width:80%;
+      height:80%;
+      margin:auto;
+    }
+    .img-container .overlay{
+      position:absolute;
+      top:0;
+      left:0;
+      margin: auto;
+      width:100%;
+      height:100%;
+      opacity:0;
+      transition:opacity 500ms ease-in-out;
+    }
+    .img-container:hover .overlay{
+      opacity:1;
+    }
+    .overlay span{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      color:#fff;
+    }
+</style>
+  <div class="container-fluid wavyContainer"style="background-color:#171e34;">
+    <h1 class='cabecalho'>IARA PROJECT</h1>
+  </div>
+  <div class="container-fluid wavyContainer">                        
+    <h2>PROJECT DESCRIPTION</h2>
+    <p>Our project look for create an organism that is able of reducing the concentration of heavy metals in aqueous solutions, focusing on mercury. We’ll intend to induce expression and secretion of a protein which is able to bind with the heavy metals and bacterial biofilm formation, in E.coli cells.</p>
+    <img src="https://2019.igem.org/wiki/images/b/b6/T--USP_SaoCarlos-Brazil--Description1.svg" class="img-fluid" style="width:100%" alt="">
+  </div>
+  <div class="container-fluid wavyContainer">
+    <h2>PROJECT INSPIRATION</h2>
+    <div class="row">
+    <div class="col-xl-6">
+        <div>
+          <p>
+            We went through a process of searching and discussing possible problems that we could solve using Synthetic Biology and we noticed that all the team has affection for environmental causes and bioremediation. Then, we remembered two environmental "disasters" that had national repercussions: the rupture of the dams of Brumadinho-MG (2019) and Mariana-MG (2015). On both occasions, the rupture of the dams caused pollution with heavy metals of the Paraopeba river (Brumadinho), Doce river (Mariana) and the affluent rivers in each region. Researches using aliquots of water from these rivers showed that some of the heavy metals in the highest concentration were mercury and lead.</br>
+            We had the idea of ​​transforming a bacteria that it is able to capture heavy metals. We were inspired by the 2014 project from another Brazilian team, UFAM_Brazil. In addition, we wanted to facilitate the removal of the bacteria from the environment and for this, we had the idea of ​​inducing the formation of a bacterial biofilm, since the bacteria will all be in the biofilm community. Another interesting point of our project is that in order to increase the survival of the bacteria: the heavy metals will not get trapped inside them, but will bind to the metal-capturing proteins that will be secreted and will be adhered to the biofilm by a tag attached to the biofilm cellulose, which is one of the main components of the biofilm matrix that will be formed.
+          </p>
+        </div>
+    </div>
+    <div class="col-xl-6 center" style="padding-right:0px">
+      <div class="img-container">
+        <img class="img-fluid rounded mx-auto d-block center" src="https://2019.igem.org/wiki/images/a/a3/T--USP_SaoCarlos-Brazil--BentoRodriguesBefore.jpg">
+        <figcaption class="figure-caption">Dam mud destroyed Bento Rodrigues district in Mariana (Photo:  DigitalGlobe e Globalgeo Geotecnologias)</figcaption>
+        <div class="overlay">
+          <img class="img-fluid rounded mx-auto d-block center" src="https://2019.igem.org/wiki/images/0/03/T--USP_SaoCarlos-Brazil--BentoRodriguesAfter.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container-fluid wavyContainer">
+    <h2>PROJECT GOALS</h2>
+    <p>The main goals of our project are to ensure expression and secretion of the protein that captures heavy metals and also to effectively induce bacterial biofilm formation.
+For this, after an extensive period of research and discussion, we formulated some biological circuits that would be able to express and secrete the protein separately and others that are capable of guaranteeing the simultaneous expression and secretion of the protein, and the formation of the biofilm. In this way could facilitate the diagnosis of possible bacterial transformation errors.</br>
+In addition, in order to achieve the goal of performing protein secretion, we had to add in our circuit components of a protein complex responsible for secretion that has a good chance of being adaptable to the chassis we intend to use. In order to induce the formation of biofilm, we added in the circuit a protein that presents the GGDEF domain capable of increasing the level of C-di-GMP present in the bacteria, which in turn will be responsible for inducing biofilm formation.
+    </p>
+<img src="https://2019.igem.org/wiki/images/4/4c/T--USP_SaoCarlos-Brazil--design.svg" class="img-fluid center" style="width:90%" alt="">
+  </div>
+  <div class="container-fluid wavyContainer">
+    <h2>REFERENCES</h2>
+    <p>
+      <ul style="font-size:15px">
+        <li>
+          Internal Biosafety Committee IFSC/USP. Available in: <a href="http://www.ifsc.usp.br/cibio/index.php">www.ifsc.usp.br/cibio/index.php</a>.
+        </li>
+        <li>
+          <a href="https://2014.igem.org/Team:UFAM_Brazil">Team: UFAM Brazil</a>.
+        </li>
+        <li>
+          BARKAY, Tamar; MILLER, Susan M. and SUMMERS, Anne O. Bacterial mercury resistance from atoms to ecosystems. FEMS Microbiology Reviews, vol. 27, no. 2-3, p. 355–384, 2003. 
+        </li>
+        <li>
+          Brumadinho e Mariana: Barragens que causam desastres ambientais! | GTech - Soluções Ambientais. GTech. Available in: <a href="http://gtechsolucoes.com.br/brumadinho-e-mariana-barragens-desastres-ambientais">gtechsolucoes.com.br/brumadinho-e-mariana-barragens-desastres-ambientais</a>.
+        </li>
+      </ul>
+    </p>
+  </div>
+  <!-- Scripts -->
+  <script type="text/javascript" src="https://2019.igem.org/wiki/index.php?title=Template:USP_SaoCarlos-Brazil/IARAWaveJS&action=raw&ctype=text/javascript"</script>
+  <script type="text/javascript" src="https://2019.igem.org/wiki/index.php?title=Template:USP_SaoCarlos-Brazil/IARATemplateJS&action=raw&ctype=text/javascript"</script>
+</html>
+{{USP_SaoCarlos-Brazil/IARAFooter}}

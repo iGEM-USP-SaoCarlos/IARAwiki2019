@@ -11,8 +11,7 @@ def fetch_write(page_path, template=False):
     template=True means page is a template"""
 
     page_name = page_path.stem
-    print(f'Fetching {["page", "template"][template]} "{page_name}"...',
-          end='\r')
+    print(f'Fetching {["page", "template"][template]} "{page_name}"...', end='\r')
 
     url = iGEM_url(page_name, template)
     response = requests.get(url)
